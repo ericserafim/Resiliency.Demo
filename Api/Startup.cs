@@ -36,6 +36,7 @@ namespace Api
             services
                 .AddHttpClient<WeatherService>("externalApi", client =>
                     {
+                        System.Console.WriteLine($"{Configuration["Settings:BaseExternalUrl"]}:{Configuration["Settings:Port"]}");
                         client.BaseAddress = new Uri($"{Configuration["Settings:BaseExternalUrl"]}:{Configuration["Settings:Port"]}");
                     })
                 .AddRetryPolicy()
