@@ -26,6 +26,8 @@ namespace Api.Services
             {
                 await Task.Run(() => 
                 {
+                    System.Console.WriteLine($"{_settings.BaseExternalUrl.Replace("http://", string.Empty).Replace("https://", string.Empty)}:{_settings.Port}");                
+
                     using var tcpClient = new TcpClient(
                         _settings.BaseExternalUrl.Replace("https://", string.Empty), 
                         _settings.Port);

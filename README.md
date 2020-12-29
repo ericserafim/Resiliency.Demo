@@ -16,3 +16,8 @@ With failing middleware enabled, all responses will be 500.
 
 
 ## Running locally
+Considering that you have Docker already installed. Just run the following command:
+
+```
+docker-compose up
+```
