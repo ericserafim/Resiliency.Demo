@@ -1,4 +1,8 @@
 # Resiliency.Demo
+[![Generic badge](https://img.shields.io/badge/.NET-5.0-purple.svg)](https://dotnet.microsoft.com/download/dotnet/5.0)
+[![Generic badge](https://img.shields.io/badge/Polly-7.2-green.svg)](https://github.com/App-vNext/Polly)
+[![Generic badge](https://img.shields.io/badge/Stringer-1.0.1.0-blue.svg)](https://github.com/ericserafim/Stringer)
+
 Microservice Resiliency Example
 
 This example is composed of two APIs to simulate a dependency between microservices.
